@@ -38,20 +38,20 @@
 
 // -------написать функцию каторая заполнит масив рандомными значениями и потом находим срежнее арифметическое!
 
-const randomArr = (amount, min, max) => {
-  let num = [];
-  for (let i = 0; i < amount; i++) {
-    num.push(parseInt(Math.random() * (max - min) + min));
-  }
+// const randomArr = (amount, min, max) => {
+//   let num = [];
+//   for (let i = 0; i < amount; i++) {
+//     num.push(parseInt(Math.random() * (max - min) + min));
+//   }
 
-  let sumItem = 0;
-  for (let item of num) {
-    sumItem += item;
-  }
+//   let sumItem = 0;
+//   for (let item of num) {
+//     sumItem += item;
+//   }
 
-  return sumItem / num.length;
-};
+//   return sumItem / num.length;
+// };
 
-console.log(randomArr(10, 1, 100));
+// console.log(randomArr(10, 1, 100));
 
 // ------------

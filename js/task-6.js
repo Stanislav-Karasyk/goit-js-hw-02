@@ -1,19 +1,22 @@
-'use strict';
-
+const numbers = [];
 let input;
 let total = 0;
 
-
 do {
-   input = prompt('Введите число');
+  input = prompt('Введите число');
 
-    if (input === null) {
-        break;
-    }
-    
-    input = Number(input);
-    total += input;
+  if (input === null) {
+    break;
+  }
 
-} while (true);
+  input = Number(input);
+  numbers.push(input);
+} while (input !== null);
+
+let sumItem = 0;
+for (let item of numbers) {
+  sumItem += item;
+  total = sumItem;
+}
 
 alert(`Общая сумма чисел равна ${total}`);
