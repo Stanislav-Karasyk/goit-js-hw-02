@@ -1,13 +1,5 @@
 const formatString = function (string) {
-  const controlLength = 40;
-  let result;
-  if (string.length < controlLength) {
-    result = string;
-  } else if (string.length > controlLength) {
-    result = string.substr(0, 40) + '...';
-  }
-
-  return result;
+  return string.length < 40 ? string : string.slice(0, 40) + '...';
 };
 
 //для проверки:
